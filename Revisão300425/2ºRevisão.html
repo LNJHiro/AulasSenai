@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Descubra seu signo</h1>
+    
+    Escolha um dispositivo: 
+    <select id="dispositivo" onchange="mostrarDescricao()">
+        <option value="">--Selecione--</option>
+        <option value="fita">Fita Cassete</option>
+        <option value="dvd">DVD</option>
+        <option value="cd">CD</option>
+    </select><br><br>
+    <p id="descricao"></p>
+
+    <script>
+        function mostrarDescricao() {
+            var dispositivo = document.getElementById("dispositivo").value;
+            var descricao = document.getElementById("descricao");
+
+            switch (dispositivo) {
+                case "fita":
+                    descricao.innerHTML = "A fita cassete foi um dos principais meios de armazenamento de áudio nos anos 70 e 80.";
+                    break;
+                case "dvd":
+                    descricao.innerHTML = "O DVD é um disco óptico usado para armazenar vídeos, músicas e dados.";
+                    break;
+                case "cd":
+                    descricao.innerHTML = "O CD revolucionou a indústria musical ao permitir armazenamento digital de áudio.";
+                    break;
+                default:
+                    descricao.innerHTML = "";
+            }
+        }
+    </script>
+</body>
+</html>
+    

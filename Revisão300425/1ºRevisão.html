@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Descubra seu signo</h1>
+    
+    Digite seu mês entre 1 e 12: <input type="number" id="mes" min="1" max="12"><br><br>
+    <button onclick="exibirSignos()">Ver signos</button>
+    <p id="resultado"></p>
+
+    <script>
+        function exibirSignos() {
+            var mes = document.getElementById("mes").value;
+            var resultado = document.getElementById("resultado");
+
+            switch (parseInt(mes)) {
+                case 1:
+                    resultado.innerHTML = "Capricórnio ou Aquário";
+                    break;
+                case 2:
+                    resultado.innerHTML = "Aquário ou Peixes";
+                    break;
+                case 3:
+                    resultado.innerHTML = "Peixes ou Áries";
+                    break;
+                case 4:
+                    resultado.innerHTML = "Áries ou Touro";
+                    break;
+                case 5:
+                    resultado.innerHTML = "Touro ou Gêmeos";
+                    break;
+                case 6:
+                    resultado.innerHTML = "Gêmeos ou Câncer";
+                    break;
+                case 7:
+                    resultado.innerHTML = "Câncer ou Leão";
+                    break;
+                case 8:
+                    resultado.innerHTML = "Leão ou Virgem";
+                    break;
+                case 9:
+                    resultado.innerHTML = "Virgem ou Libra";
+                    break;
+                case 10:
+                    resultado.innerHTML = "Libra ou Escorpião";
+                    break;
+                case 11:
+                    resultado.innerHTML = "Escorpião ou Sagitário";
+                    break;
+                case 12:
+                    resultado.innerHTML = "Sagitário ou Capricórnio";
+                    break;
+                default:
+                    resultado.innerHTML = "Mês inválido! Digite um número entre 1 e 12.";
+            }
+        }
+    </script>
+</body>
+</html>
