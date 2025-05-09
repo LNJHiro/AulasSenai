@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Ubuntu', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+}
+
+h1, h2 {
+  text-align: center;
+  color: inherit;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.menu button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.menu button:hover {
+  background-color: darkred;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+body.dark-mode th {
+  background-color: #444;
+}
+
+.hidden {
+  display: none;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.emprestado {
+  color: red;
+  font-weight: bold;
+}
+
+.disponivel {
+  color: green;
+  font-weight: bold;
+}
+
